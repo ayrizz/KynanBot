@@ -19,7 +19,7 @@ from wbb.utils.functions import (extract_user, extract_user_and_reason,
 
 
 @app.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
-@admins_only
+@adminsOnly
 async def tagall(client, message):
     await message.reply("`Processing.....`")
     sh = get_text(message)

@@ -1,6 +1,7 @@
 # Add license text here, get it from below
 
 from wbb import app # This is bot's client
+from pyrogram import filters
 
 
 

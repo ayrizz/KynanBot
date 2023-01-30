@@ -5,7 +5,7 @@ from wbb import app # This is bot's client
 
 
 
-@pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
+@app.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
     await message.reply("`Processing.....`")
